@@ -1,0 +1,7 @@
+{
+  "*.{js,jsx,ts,tsx}": [
+    "npm run format:prettier",
+    "npm run format:eslint",
+    "git add"
+  ]
+}

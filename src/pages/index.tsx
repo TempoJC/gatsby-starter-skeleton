@@ -90,6 +90,8 @@ const badgeStyle = {
   lineHeight: 1,
 };
 
+const partido = "";
+
 const links = [
   {
     text: "Tutorial",
