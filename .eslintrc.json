@@ -27,8 +27,14 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".jsx", ".tsx"] }
+    ],
+    "react/no-danger": "off",
     "react/prop-types": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "prettier/prettier": 2 // This will cause Prettier problems to error
+    "prettier/prettier": 2, // This will cause Prettier problems to error
+    "import/no-extraneous-dependencies": "off"
   }
 }

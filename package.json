@@ -4,16 +4,19 @@
   "private": true,
   "description": "gatsby-starter-skeleton",
   "author": "JoseCC",
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "format:prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format:eslint": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+    "format": "npm run format:eslint && npm run format:prettier",
+    "check:format": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
+    "check:lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --ext .js,.ts --color"
   },
   "dependencies": {
     "@mdx-js/react": "^2.1.3",
