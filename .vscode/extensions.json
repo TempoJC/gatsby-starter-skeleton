@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "yzhang.markdown-all-in-one"
+  ]
+}
