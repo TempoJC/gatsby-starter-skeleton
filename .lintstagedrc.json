@@ -3,5 +3,6 @@
     "npm run format:prettier",
     "npm run format:eslint",
     "git add"
-  ]
+  ],
+  "*.{styled,css}*": ["npm run stylelint", "git add"]
 }
