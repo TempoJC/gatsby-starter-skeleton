@@ -1,12 +1,10 @@
 {
   "name": "gatsby-starter-skeleton",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "gatsby-starter-skeleton",
   "author": "JoseCC",
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
