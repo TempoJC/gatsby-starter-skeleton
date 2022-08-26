@@ -4,7 +4,18 @@
   "private": true,
   "description": "gatsby-starter-skeleton",
   "author": "JoseCC",
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby",
+    "typescript",
+    "eslint",
+    "husky",
+    "prettier",
+    "docker",
+    "makefile",
+    "stylelint",
+    "gitlab",
+    "tailwind"
+  ],
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
