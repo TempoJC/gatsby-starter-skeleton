@@ -3,11 +3,10 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `gatsby-starter-skeleton`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `@gatsbyjs`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
-  // If you use VSCode you can also use the GraphQL plugin
-  // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-postcss",
@@ -20,9 +19,14 @@ const config: GatsbyConfig = {
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: "src/images/icon.png",
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        display: `minimal-ui`,
+        icon: "src/images/icon.png", // This path is relative to the root of the site.
       },
     },
     "gatsby-plugin-mdx",
@@ -48,13 +52,9 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-eslint",
       options: {
-        // Gatsby required rules directory
-        // Default settings that may be ommitted or customized
         stages: ["develop"],
         extensions: ["js", "jsx", "ts", "tsx"],
         exclude: ["node_modules", "bower_components", ".cache", "public"],
-        // Any additional eslint-webpack-plugin options below
-        // ...
       },
     },
   ],
