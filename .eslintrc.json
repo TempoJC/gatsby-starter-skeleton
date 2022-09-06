@@ -4,7 +4,9 @@
   },
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true,
+    "jest": true
   },
   "extends": [
     "eslint:recommended",
@@ -39,6 +41,7 @@
     "react/no-danger": "off",
     "react/prop-types": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-var-requires": 0,
     "prettier/prettier": 2, // This will cause Prettier problems to error
     "import/no-extraneous-dependencies": "off"
   }

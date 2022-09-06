@@ -4,6 +4,7 @@ default:
 stages:
   - setup
   - validate
+  - test
   - build
   - deploy
 
@@ -23,13 +24,13 @@ install-dependencies:
 check-types:
   stage: validate
   script:
-    - echo "VALIDANDO TYPESCRIPT"
+    - echo "VALIDAR TYPESCRIPT"
       - npm run typecheck
 
 check-format:
   stage: validate
   script:
-    - echo "VALIDANDO PRETTIER"
+    - echo "VALIDAR PRETTIER"
     - npm run check:format
   only:
     - develop
@@ -37,10 +38,17 @@ check-format:
 check-lint:
   stage: validate
   script:
-    - echo "VALIDANDO ESLINT"
+    - echo "VALIDAR ESLINT"
     - npm run check:lint
   only:
     - develop
+
+test-coverage:
+  stage: test
+  script:
+    - echo "VALIDAR TEST"
+    - npm install
+    - npm run test:unit:coverage
 
 build-dist:
   stage: build
